@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Контактная информация учебного магазина, способы получения и ответы на вопросы о заявке."
+    />
+    <meta name="theme-color" content="#244c35" />
+    <title>Контакты и получение — Зелёный магазин</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script src="js/main.js" defer=""></script>
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <div class="announcement">Меньше одноразового. Больше любимых вещей.</div>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="index.html"
+          ><img
+            class="brand__icon"
+            src="images/favicon.svg"
+            alt=""
+            width="40"
+            height="40"
+          /><span
+            >зелёный<span class="brand__caption"
+              >магазин повседневных вещей</span
+            ></span
+          ></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-controls="site-navigation"
+          aria-expanded="false"
+          hidden=""
+        >
+          <span class="menu-toggle__icon" aria-hidden="true">☰</span
+          ><span>Меню</span>
+        </button>
+        <nav
+          class="site-nav"
+          aria-label="Основная навигация"
+          id="site-navigation"
+        >
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="product.html">О товаре</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="order.html">Заявка</a>
+            </li>
+            <li class="site-nav__item">
+              <a
+                class="site-nav__link site-nav__link--active"
+                href="contacts.html"
+                aria-current="page"
+                >Контакты</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <a class="site-header__action" href="order.html"
+          >Оставить заявку <span aria-hidden="true">↗</span></a
+        >
+      </div>
+    </header>
+    <main class="container" id="main" tabindex="-1">
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <ol class="breadcrumbs__list">
+          <li><a href="index.html">Главная</a></li>
+          <li aria-current="page">Контакты</li>
+        </ol>
+      </nav>
+      <section class="page-heading">
+        <p class="eyebrow">Остаёмся на связи</p>
+        <h1>Поможем разобраться</h1>
+        <p>Материалы, уход или выбор вещи — начните с заявки.</p>
+      </section>
+      <div class="contact-layout">
+        <section class="contact-card">
+          <p class="eyebrow">Напишите нам</p>
+          <h2>Есть вопрос о товаре?</h2>
+          <p>
+            Напишите вопрос о материале, уходе или выборе. Форма обратной связи
+            находится ниже.
+          </p>
+          <a class="button" href="#feedback">Задать вопрос ↓</a>
+          <address class="contact-card__address">
+            <span>Электронная почта макета</span
+            ><a href="mailto:hello@green-shop.example"
+              >hello@green-shop.example</a
+            ><span>Город учебного проекта</span><strong>Москва</strong>
+          </address>
+          <p class="contact-card__note">
+            Адрес с доменом .example вымышленный. Письма по нему не принимаются,
+            реального магазина и пункта выдачи нет.
+          </p>
+        </section>
+        <section class="delivery-card">
+          <p class="eyebrow">Условия в макете</p>
+          <h2>Два способа получения</h2>
+          <article class="delivery-card__item">
+            <span class="delivery-card__icon" aria-hidden="true">01</span>
+            <div>
+              <h3>Самовывоз</h3>
+              <p>
+                Без дополнительной оплаты. Пункт и время выдачи в реальном
+                магазине уточняются при подтверждении заказа.
+              </p>
+              <strong>Бесплатно</strong>
+            </div>
+          </article>
+          <article class="delivery-card__item">
+            <span class="delivery-card__icon" aria-hidden="true">02</span>
+            <div>
+              <h3>Доставка</h3>
+              <p>
+                Для демонстрации используется фиксированная стоимость. Адрес
+                можно было бы уточнить после заявки.
+              </p>
+              <strong>300 ₽</strong>
+            </div>
+          </article>
+          <p class="delivery-card__note">
+            Эти условия нужны для учебного сценария. Оплата и отправка товаров
+            не предусмотрены.
+          </p>
+        </section>
+      </div>
+      <section
+        class="section feedback"
+        id="feedback"
+        aria-labelledby="feedback-title"
+      >
+        <div class="feedback__intro">
+          <p class="eyebrow">Обратная связь</p>
+          <h2 id="feedback-title">Что хотите узнать?</h2>
+          <p>Учебная форма проверит поля и покажет подтверждение.</p>
+        </div>
+        <form
+          class="feedback-form"
+          id="feedback-form"
+          data-demo-form=""
+          data-success-dialog="feedback-dialog"
+          action="#feedback"
+          method="post"
+        >
+          <div class="order-form__grid">
+            <div class="order-form__field">
+              <label for="feedback-name">Имя *</label
+              ><input
+                type="text"
+                name="name"
+                id="feedback-name"
+                minlength="2"
+                maxlength="80"
+                autocomplete="given-name"
+                required=""
+              />
+            </div>
+            <div class="order-form__field">
+              <label for="feedback-email">Электронная почта *</label
+              ><input
+                type="email"
+                name="email"
+                id="feedback-email"
+                maxlength="120"
+                autocomplete="email"
+                required=""
+              />
+            </div>
+            <div class="order-form__field order-form__field--wide">
+              <label for="feedback-message">Вопрос *</label
+              ><textarea
+                id="feedback-message"
+                name="message"
+                rows="4"
+                minlength="10"
+                maxlength="1000"
+                required=""
+              ></textarea>
+            </div>
+          </div>
+          <p class="order-form__note" id="feedback-note">
+            Поля со звёздочкой обязательны. Данные не сохраняются и не
+            отправляются; можно указать вымышленные контакты.
+          </p>
+          <label class="order-form__agreement" for="feedback-agreement"
+            ><input
+              id="feedback-agreement"
+              name="agreement"
+              type="checkbox"
+              required=""
+            /><span
+              >Согласен на учебную проверку заполненных полей. *</span
+            ></label
+          >
+          <div class="order-form__actions">
+            <button
+              class="button"
+              type="submit"
+              aria-describedby="feedback-note"
+              disabled=""
+            >
+              Проверить вопрос ↗</button
+            ><button class="text-button" type="reset">Очистить</button>
+          </div>
+          <noscript
+            ><p class="notice">
+              Для проверки включите JavaScript. Данные никуда не отправляются.
+            </p></noscript
+          >
+        </form>
+      </section>
+      <dialog
+        class="modal"
+        id="feedback-dialog"
+        aria-labelledby="feedback-dialog-title"
+        aria-describedby="feedback-dialog-description"
+      >
+        <form method="dialog">
+          <button
+            class="modal__close"
+            aria-label="Закрыть подтверждение"
+            autofocus=""
+          >
+            ×
+          </button>
+        </form>
+        <p class="eyebrow">Учебная демонстрация</p>
+        <h2 id="feedback-dialog-title">Вопрос проверен</h2>
+        <p id="feedback-dialog-description">
+          Поля заполнены корректно. Сообщение не отправлялось и не сохранялось.
+        </p>
+        <form method="dialog">
+          <button class="button">Вернуться к форме</button>
+        </form>
+      </dialog>
+      <section class="section faq">
+        <div>
+          <p class="eyebrow">Полезно знать</p>
+          <h2>О заявке и уходе</h2>
+        </div>
+        <div class="faq__list">
+          <details class="faq__item">
+            <summary class="faq__question">
+              Почему нет корзины и оплаты?
+            </summary>
+            <p>
+              Это контрольная работа по HTML и CSS. Здесь показан путь от
+              каталога к форме заявки. Корзина, платёжный сервис и серверная
+              обработка не входят в этот этап.
+            </p>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question">
+              Как выбрать подходящий материал?
+            </summary>
+            <p>
+              На странице товара указаны материал, размер и уход. Начните с
+              <a href="catalog.html#comparison">сравнения популярных вещей</a>,
+              а затем откройте подробное описание.
+            </p>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question">
+              Что произойдёт после заполнения формы?
+            </summary>
+            <p>
+              Если обязательные поля заполнены верно, откроется окно
+              подтверждения проверки. Контактные данные останутся в полях до
+              перезагрузки или очистки формы.
+            </p>
+          </details>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer" id="contacts">
+      <div class="container site-footer__inner">
+        <div>
+          <a class="brand brand--footer" href="index.html"
+            >зелёный<span class="brand__caption"
+              >Вещи, к которым привыкаешь.</span
+            ></a
+          >
+          <p class="site-footer__note">
+            Учебный магазин. Товары, цены и условия<br />приведены для
+            демонстрации.
+          </p>
+        </div>
+        <nav class="site-footer__nav" aria-label="Разделы главной">
+          <a href="index.html#advantages">Почему мы</a
+          ><a href="index.html#popular">Популярные товары</a
+          ><a href="index.html#faq">Вопросы и ответы</a>
+        </nav>
+        <div class="site-footer__nav">
+          <a href="contacts.html">Контакты и доставка ↗</a
+          ><a href="order.html">Форма заявки ↗</a
+          ><span>КР №3 · Адаптивность и доступность · 2026</span>
+        </div>
+      </div>
+      <div class="container site-footer__bottom">
+        Киселев Максим Андреевич · ЭФБО-01-25<span
+          >Сделано для учебной практики</span
+        >
+      </div>
+    </footer>
+    <a class="back-to-top" href="#top" aria-label="Вернуться наверх">↑</a>
+  </body>
+</html>

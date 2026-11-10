@@ -1,0 +1,807 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Материалы, размеры, комплектация и уход за товарами Зелёного магазина. Подробные таблицы характеристик и переход к заявке."
+    />
+    <meta name="theme-color" content="#244c35" />
+    <title>Описание и характеристики товаров — Зелёный магазин</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script src="js/main.js" defer=""></script>
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <div class="announcement">Меньше одноразового. Больше любимых вещей.</div>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="index.html"
+          ><img
+            class="brand__icon"
+            src="images/favicon.svg"
+            alt=""
+            width="40"
+            height="40"
+          /><span
+            >зелёный<span class="brand__caption"
+              >магазин повседневных вещей</span
+            ></span
+          ></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-controls="site-navigation"
+          aria-expanded="false"
+          hidden=""
+        >
+          <span class="menu-toggle__icon" aria-hidden="true">☰</span
+          ><span>Меню</span>
+        </button>
+        <nav
+          class="site-nav"
+          aria-label="Основная навигация"
+          id="site-navigation"
+        >
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="site-nav__item">
+              <a
+                class="site-nav__link site-nav__link--active"
+                href="product.html"
+                aria-current="page"
+                >О товаре</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="order.html">Заявка</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="site-header__action" href="order.html"
+          >Оставить заявку <span aria-hidden="true">↗</span></a
+        >
+      </div>
+    </header>
+    <main class="container" id="main" tabindex="-1">
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <ol class="breadcrumbs__list">
+          <li><a href="index.html">Главная</a></li>
+          <li aria-current="page">О товаре</li>
+        </ol>
+      </nav>
+      <section class="page-heading page-heading--compact">
+        <p class="eyebrow">Рассмотрим поближе</p>
+        <h1>Всё о выбранной вещи</h1>
+        <nav class="product-tabs" aria-label="Выбрать описание товара">
+          <a href="#bottle">Бутылка «Лес»</a
+          ><a href="#kit">Зелень на подоконнике</a
+          ><a href="#bag">Шоппер «Каждый день»</a
+          ><a href="#brush">Бамбуковая щётка</a
+          ><a href="#covers">Многоразовые бахилы</a
+          ><a href="#picnic">Набор для пикника</a>
+        </nav>
+      </section>
+      <article
+        class="product-detail"
+        id="bottle"
+        aria-labelledby="title-bottle"
+      >
+        <div class="product-detail__visual">
+          <span class="product-card__badge">Выбор недели</span
+          ><picture
+            ><source
+              type="image/webp"
+              srcset="
+                images/bottle-480.webp   480w,
+                images/bottle-960.webp   960w,
+                images/bottle-1440.webp 1440w
+              "
+              sizes="(min-width: 1280px) 570px, (min-width: 768px) calc((100vw - 100px) / 2), calc(100vw - 34px)" />
+            <img
+              src="images/bottle.svg"
+              alt="Матовая зелёная бутылка с винтовой крышкой"
+              width="600"
+              height="500"
+          /></picture>
+        </div>
+        <div class="product-detail__content">
+          <p class="eyebrow">В дорогу · арт. ZM-001</p>
+          <h2 id="title-bottle">Бутылка «Лес»</h2>
+          <p>
+            Лёгкая бутылка объёмом 500 мл помещается в боковой карман рюкзака.
+            Винтовая крышка с силиконовым уплотнителем защищает от протекания.
+            Широкое горлышко удобно мыть.
+          </p>
+          <p class="product-detail__price">1 200 ₽</p>
+          <div class="product-detail__actions">
+            <a class="button" href="order.html?product=bottle"
+              >Оставить заявку ↗</a
+            ><button
+              class="text-button"
+              type="button"
+              data-dialog="delivery-dialog"
+            >
+              Условия получения
+            </button>
+          </div>
+          <div
+            class="table-wrap product-detail__table"
+            tabindex="0"
+            role="region"
+            aria-label="Характеристики: Бутылка «Лес»"
+          >
+            <table class="data-table data-table--specs">
+              <caption>
+                Характеристики: Бутылка «Лес»
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Параметр</th>
+                  <th scope="col">Значение</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Объём</th>
+                  <td>500 мл</td>
+                </tr>
+                <tr>
+                  <th scope="row">Материал корпуса</th>
+                  <td>Нержавеющая сталь</td>
+                </tr>
+                <tr>
+                  <th scope="row">Крышка</th>
+                  <td>Полипропилен, силикон</td>
+                </tr>
+                <tr>
+                  <th scope="row">Размер</th>
+                  <td>22 × 7 см</td>
+                </tr>
+                <tr>
+                  <th scope="row">Вес</th>
+                  <td>210 г</td>
+                </tr>
+                <tr>
+                  <th scope="row">Уход</th>
+                  <td>Мыть вручную</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <section class="table-cards" aria-labelledby="specs-bottle">
+            <h3 id="specs-bottle">Характеристики</h3>
+            <dl class="spec-list table-card">
+              <div>
+                <dt>Объём</dt>
+                <dd>500 мл</dd>
+              </div>
+              <div>
+                <dt>Материал корпуса</dt>
+                <dd>Нержавеющая сталь</dd>
+              </div>
+              <div>
+                <dt>Крышка</dt>
+                <dd>Полипропилен, силикон</dd>
+              </div>
+              <div>
+                <dt>Размер</dt>
+                <dd>22 × 7 см</dd>
+              </div>
+              <div>
+                <dt>Вес</dt>
+                <dd>210 г</dd>
+              </div>
+              <div>
+                <dt>Уход</dt>
+                <dd>Мыть вручную</dd>
+              </div>
+            </dl>
+          </section>
+        </div>
+      </article>
+      <article class="product-detail" id="kit" aria-labelledby="title-kit">
+        <div class="product-detail__visual">
+          <span class="product-card__badge">Новинка</span
+          ><picture
+            ><source
+              type="image/webp"
+              srcset="
+                images/kit-480.webp   480w,
+                images/kit-960.webp   960w,
+                images/kit-1440.webp 1440w
+              "
+              sizes="(min-width: 1280px) 570px, (min-width: 768px) calc((100vw - 100px) / 2), calc(100vw - 34px)" />
+            <img
+              src="images/kit.svg"
+              alt="Два терракотовых горшка с базиликом и мятой"
+              width="600"
+              height="500"
+              loading="lazy"
+          /></picture>
+        </div>
+        <div class="product-detail__content">
+          <p class="eyebrow">Для дома · арт. ZM-002</p>
+          <h2 id="title-kit">Зелень на подоконнике</h2>
+          <p>
+            В наборе два горшочка, грунт и семена базилика и мяты. Поставьте
+            растения на светлый подоконник и следите за влажностью почвы.
+            Инструкция по посадке входит в комплект.
+          </p>
+          <p class="product-detail__price">2 500 ₽</p>
+          <div class="product-detail__actions">
+            <a class="button" href="order.html?product=kit">Оставить заявку ↗</a
+            ><button
+              class="text-button"
+              type="button"
+              data-dialog="delivery-dialog"
+            >
+              Условия получения
+            </button>
+          </div>
+          <div
+            class="table-wrap product-detail__table"
+            tabindex="0"
+            role="region"
+            aria-label="Характеристики: Зелень на подоконнике"
+          >
+            <table class="data-table data-table--specs">
+              <caption>
+                Характеристики: Зелень на подоконнике
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Параметр</th>
+                  <th scope="col">Значение</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">В комплекте</th>
+                  <td>2 горшочка, грунт, семена</td>
+                </tr>
+                <tr>
+                  <th scope="row">Растения</th>
+                  <td>Базилик и мята</td>
+                </tr>
+                <tr>
+                  <th scope="row">Материал горшков</th>
+                  <td>Терракота</td>
+                </tr>
+                <tr>
+                  <th scope="row">Диаметр горшка</th>
+                  <td>9 см</td>
+                </tr>
+                <tr>
+                  <th scope="row">Условия</th>
+                  <td>Светлое место, регулярный полив</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <section class="table-cards" aria-labelledby="specs-kit">
+            <h3 id="specs-kit">Характеристики</h3>
+            <dl class="spec-list table-card">
+              <div>
+                <dt>В комплекте</dt>
+                <dd>2 горшочка, грунт, семена</dd>
+              </div>
+              <div>
+                <dt>Растения</dt>
+                <dd>Базилик и мята</dd>
+              </div>
+              <div>
+                <dt>Материал горшков</dt>
+                <dd>Терракота</dd>
+              </div>
+              <div>
+                <dt>Диаметр горшка</dt>
+                <dd>9 см</dd>
+              </div>
+              <div>
+                <dt>Условия</dt>
+                <dd>Светлое место, регулярный полив</dd>
+              </div>
+            </dl>
+          </section>
+        </div>
+      </article>
+      <article class="product-detail" id="bag" aria-labelledby="title-bag">
+        <div class="product-detail__visual">
+          <span class="product-card__badge">−20%</span
+          ><picture
+            ><source
+              type="image/webp"
+              srcset="
+                images/bag-480.webp   480w,
+                images/bag-960.webp   960w,
+                images/bag-1440.webp 1440w
+              "
+              sizes="(min-width: 1280px) 570px, (min-width: 768px) calc((100vw - 100px) / 2), calc(100vw - 34px)" />
+            <img
+              src="images/bag.svg"
+              alt="Хлопковый шоппер с рисунком растения"
+              width="600"
+              height="500"
+              loading="lazy"
+          /></picture>
+        </div>
+        <div class="product-detail__content">
+          <p class="eyebrow">В дорогу · арт. ZM-003</p>
+          <h2 id="title-bag">Шоппер «Каждый день»</h2>
+          <p>
+            Сумка для тетрадей, продуктов и повседневных мелочей. Складывается и
+            занимает мало места. Натуральный хлопок может дать небольшую усадку
+            после первой стирки.
+          </p>
+          <p class="product-detail__price">800 ₽ <del>1 000 ₽</del></p>
+          <div class="product-detail__actions">
+            <a class="button" href="order.html?product=bag">Оставить заявку ↗</a
+            ><button
+              class="text-button"
+              type="button"
+              data-dialog="delivery-dialog"
+            >
+              Условия получения
+            </button>
+          </div>
+          <div
+            class="table-wrap product-detail__table"
+            tabindex="0"
+            role="region"
+            aria-label="Характеристики: Шоппер «Каждый день»"
+          >
+            <table class="data-table data-table--specs">
+              <caption>
+                Характеристики: Шоппер «Каждый день»
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Параметр</th>
+                  <th scope="col">Значение</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Материал</th>
+                  <td>100% хлопок</td>
+                </tr>
+                <tr>
+                  <th scope="row">Плотность ткани</th>
+                  <td>240 г/м²</td>
+                </tr>
+                <tr>
+                  <th scope="row">Размер</th>
+                  <td>38 × 42 см</td>
+                </tr>
+                <tr>
+                  <th scope="row">Длина ручек</th>
+                  <td>65 см</td>
+                </tr>
+                <tr>
+                  <th scope="row">Уход</th>
+                  <td>Стирка при 30 °C</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <section class="table-cards" aria-labelledby="specs-bag">
+            <h3 id="specs-bag">Характеристики</h3>
+            <dl class="spec-list table-card">
+              <div>
+                <dt>Материал</dt>
+                <dd>100% хлопок</dd>
+              </div>
+              <div>
+                <dt>Плотность ткани</dt>
+                <dd>240 г/м²</dd>
+              </div>
+              <div>
+                <dt>Размер</dt>
+                <dd>38 × 42 см</dd>
+              </div>
+              <div>
+                <dt>Длина ручек</dt>
+                <dd>65 см</dd>
+              </div>
+              <div>
+                <dt>Уход</dt>
+                <dd>Стирка при 30 °C</dd>
+              </div>
+            </dl>
+          </section>
+        </div>
+      </article>
+      <article class="product-detail" id="brush" aria-labelledby="title-brush">
+        <div class="product-detail__visual">
+          <span class="product-card__badge">Для дома</span
+          ><picture
+            ><source
+              type="image/webp"
+              srcset="
+                images/brush-480.webp   480w,
+                images/brush-960.webp   960w,
+                images/brush-1440.webp 1440w
+              "
+              sizes="(min-width: 1280px) 570px, (min-width: 768px) calc((100vw - 100px) / 2), calc(100vw - 34px)" />
+            <img
+              src="images/brush.svg"
+              alt="Зубная щётка с бамбуковой ручкой"
+              width="600"
+              height="500"
+              loading="lazy"
+          /></picture>
+        </div>
+        <div class="product-detail__content">
+          <p class="eyebrow">Для дома · арт. ZM-004</p>
+          <h2 id="title-brush">Бамбуковая щётка</h2>
+          <p>
+            Удобная бамбуковая ручка без лакового покрытия. После использования
+            промойте щётку и оставьте высыхать щетиной вверх. Щетина нейлоновая:
+            перед утилизацией её нужно отделить от ручки.
+          </p>
+          <p class="product-detail__price">300 ₽</p>
+          <div class="product-detail__actions">
+            <a class="button" href="order.html?product=brush"
+              >Оставить заявку ↗</a
+            ><button
+              class="text-button"
+              type="button"
+              data-dialog="delivery-dialog"
+            >
+              Условия получения
+            </button>
+          </div>
+          <div
+            class="table-wrap product-detail__table"
+            tabindex="0"
+            role="region"
+            aria-label="Характеристики: Бамбуковая щётка"
+          >
+            <table class="data-table data-table--specs">
+              <caption>
+                Характеристики: Бамбуковая щётка
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Параметр</th>
+                  <th scope="col">Значение</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Ручка</th>
+                  <td>Бамбук</td>
+                </tr>
+                <tr>
+                  <th scope="row">Щетина</th>
+                  <td>Нейлон, мягкая</td>
+                </tr>
+                <tr>
+                  <th scope="row">Длина</th>
+                  <td>19 см</td>
+                </tr>
+                <tr>
+                  <th scope="row">Комплектация</th>
+                  <td>1 щётка</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <section class="table-cards" aria-labelledby="specs-brush">
+            <h3 id="specs-brush">Характеристики</h3>
+            <dl class="spec-list table-card">
+              <div>
+                <dt>Ручка</dt>
+                <dd>Бамбук</dd>
+              </div>
+              <div>
+                <dt>Щетина</dt>
+                <dd>Нейлон, мягкая</dd>
+              </div>
+              <div>
+                <dt>Длина</dt>
+                <dd>19 см</dd>
+              </div>
+              <div>
+                <dt>Комплектация</dt>
+                <dd>1 щётка</dd>
+              </div>
+            </dl>
+          </section>
+        </div>
+      </article>
+      <article
+        class="product-detail"
+        id="covers"
+        aria-labelledby="title-covers"
+      >
+        <div class="product-detail__visual">
+          <span class="product-card__badge">В дорогу</span
+          ><picture
+            ><source
+              type="image/webp"
+              srcset="
+                images/covers-480.webp   480w,
+                images/covers-960.webp   960w,
+                images/covers-1440.webp 1440w
+              "
+              sizes="(min-width: 1280px) 570px, (min-width: 768px) calc((100vw - 100px) / 2), calc(100vw - 34px)" />
+            <img
+              src="images/covers.svg"
+              alt="Пара многоразовых тканевых бахил"
+              width="600"
+              height="500"
+              loading="lazy"
+          /></picture>
+        </div>
+        <div class="product-detail__content">
+          <p class="eyebrow">В дорогу · арт. ZM-005</p>
+          <h2 id="title-covers">Многоразовые бахилы</h2>
+          <p>
+            Подойдут для посещения помещений, где разрешены тканевые бахилы.
+            Резинка удерживает их на обуви, а небольшой чехол помогает хранить
+            пару отдельно от других вещей.
+          </p>
+          <p class="product-detail__price">500 ₽</p>
+          <div class="product-detail__actions">
+            <a class="button" href="order.html?product=covers"
+              >Оставить заявку ↗</a
+            ><button
+              class="text-button"
+              type="button"
+              data-dialog="delivery-dialog"
+            >
+              Условия получения
+            </button>
+          </div>
+          <div
+            class="table-wrap product-detail__table"
+            tabindex="0"
+            role="region"
+            aria-label="Характеристики: Многоразовые бахилы"
+          >
+            <table class="data-table data-table--specs">
+              <caption>
+                Характеристики: Многоразовые бахилы
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Параметр</th>
+                  <th scope="col">Значение</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Материал</th>
+                  <td>Полиэстер</td>
+                </tr>
+                <tr>
+                  <th scope="row">Размер обуви</th>
+                  <td>36–42</td>
+                </tr>
+                <tr>
+                  <th scope="row">Комплектация</th>
+                  <td>Пара и чехол</td>
+                </tr>
+                <tr>
+                  <th scope="row">Уход</th>
+                  <td>Стирка при 30 °C</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <section class="table-cards" aria-labelledby="specs-covers">
+            <h3 id="specs-covers">Характеристики</h3>
+            <dl class="spec-list table-card">
+              <div>
+                <dt>Материал</dt>
+                <dd>Полиэстер</dd>
+              </div>
+              <div>
+                <dt>Размер обуви</dt>
+                <dd>36–42</dd>
+              </div>
+              <div>
+                <dt>Комплектация</dt>
+                <dd>Пара и чехол</dd>
+              </div>
+              <div>
+                <dt>Уход</dt>
+                <dd>Стирка при 30 °C</dd>
+              </div>
+            </dl>
+          </section>
+        </div>
+      </article>
+      <article
+        class="product-detail"
+        id="picnic"
+        aria-labelledby="title-picnic"
+      >
+        <div class="product-detail__visual">
+          <span class="product-card__badge">Набор на двоих</span
+          ><picture
+            ><source
+              type="image/webp"
+              srcset="
+                images/picnic-480.webp   480w,
+                images/picnic-960.webp   960w,
+                images/picnic-1440.webp 1440w
+              "
+              sizes="(min-width: 1280px) 570px, (min-width: 768px) calc((100vw - 100px) / 2), calc(100vw - 34px)" />
+            <img
+              src="images/picnic.svg"
+              alt="Деревянные приборы в тканевом чехле"
+              width="600"
+              height="500"
+              loading="lazy"
+          /></picture>
+        </div>
+        <div class="product-detail__content">
+          <p class="eyebrow">На природу · арт. ZM-006</p>
+          <h2 id="title-picnic">Набор для пикника</h2>
+          <p>
+            Компактный набор посуды для двух человек. Бамбуковые тарелки и
+            приборы легко промыть после еды. Не оставляйте их надолго в воде и
+            не используйте в микроволновой печи.
+          </p>
+          <p class="product-detail__price">3 200 ₽</p>
+          <div class="product-detail__actions">
+            <a class="button" href="order.html?product=picnic"
+              >Оставить заявку ↗</a
+            ><button
+              class="text-button"
+              type="button"
+              data-dialog="delivery-dialog"
+            >
+              Условия получения
+            </button>
+          </div>
+          <div
+            class="table-wrap product-detail__table"
+            tabindex="0"
+            role="region"
+            aria-label="Характеристики: Набор для пикника"
+          >
+            <table class="data-table data-table--specs">
+              <caption>
+                Характеристики: Набор для пикника
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Параметр</th>
+                  <th scope="col">Значение</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">На сколько человек</th>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <th scope="row">Материал посуды</th>
+                  <td>Бамбук</td>
+                </tr>
+                <tr>
+                  <th scope="row">В комплекте</th>
+                  <td>2 тарелки, 2 вилки, 2 ложки</td>
+                </tr>
+                <tr>
+                  <th scope="row">Чехол</th>
+                  <td>Лён</td>
+                </tr>
+                <tr>
+                  <th scope="row">Уход</th>
+                  <td>Мыть вручную</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <section class="table-cards" aria-labelledby="specs-picnic">
+            <h3 id="specs-picnic">Характеристики</h3>
+            <dl class="spec-list table-card">
+              <div>
+                <dt>На сколько человек</dt>
+                <dd>2</dd>
+              </div>
+              <div>
+                <dt>Материал посуды</dt>
+                <dd>Бамбук</dd>
+              </div>
+              <div>
+                <dt>В комплекте</dt>
+                <dd>2 тарелки, 2 вилки, 2 ложки</dd>
+              </div>
+              <div>
+                <dt>Чехол</dt>
+                <dd>Лён</dd>
+              </div>
+              <div>
+                <dt>Уход</dt>
+                <dd>Мыть вручную</dd>
+              </div>
+            </dl>
+          </section>
+        </div>
+      </article>
+      <aside class="notice">
+        <h2>Перед тем как выбрать</h2>
+        <p>
+          Цены и характеристики — демонстрационные данные учебного магазина. Все
+          иллюстрации условные. Для сравнения основных товаров есть
+          <a href="catalog.html#comparison">отдельная таблица</a>.
+        </p>
+      </aside>
+      <dialog
+        class="modal"
+        id="delivery-dialog"
+        aria-labelledby="delivery-title"
+      >
+        <form method="dialog" class="modal__close-form">
+          <button
+            class="modal__close"
+            aria-label="Закрыть условия получения"
+            autofocus=""
+          >
+            ×
+          </button>
+        </form>
+        <p class="eyebrow">Условия учебного магазина</p>
+        <h2 id="delivery-title">Как получить заказ</h2>
+        <p>
+          В макете предусмотрены два способа: самовывоз без доплаты и доставка
+          за 300 ₽. Выберите подходящий вариант в заявке.
+        </p>
+        <p class="modal__note">
+          Это демонстрация сценария. Реальная доставка и оплата на сайте не
+          выполняются.
+        </p>
+        <a class="button" href="order.html">Перейти к заявке ↗</a>
+      </dialog>
+    </main>
+    <footer class="site-footer" id="contacts">
+      <div class="container site-footer__inner">
+        <div>
+          <a class="brand brand--footer" href="index.html"
+            >зелёный<span class="brand__caption"
+              >Вещи, к которым привыкаешь.</span
+            ></a
+          >
+          <p class="site-footer__note">
+            Учебный магазин. Товары, цены и условия<br />приведены для
+            демонстрации.
+          </p>
+        </div>
+        <nav class="site-footer__nav" aria-label="Разделы главной">
+          <a href="index.html#advantages">Почему мы</a
+          ><a href="index.html#popular">Популярные товары</a
+          ><a href="index.html#faq">Вопросы и ответы</a>
+        </nav>
+        <div class="site-footer__nav">
+          <a href="contacts.html">Контакты и доставка ↗</a
+          ><a href="order.html">Форма заявки ↗</a
+          ><span>КР №3 · Адаптивность и доступность · 2026</span>
+        </div>
+      </div>
+      <div class="container site-footer__bottom">
+        Киселев Максим Андреевич · ЭФБО-01-25<span
+          >Сделано для учебной практики</span
+        >
+      </div>
+    </footer>
+    <a class="back-to-top" href="#top" aria-label="Вернуться наверх">↑</a>
+  </body>
+</html>
